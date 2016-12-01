@@ -61,6 +61,10 @@ namespace BlackJack
             {
                 System.Console.WriteLine("Player one wins!");
             }
+            else if (playerOne.bust == true && playerTwo.bust == true)
+            {
+                System.Console.WriteLine("You both busted! Game over...");
+            }
             else
             {
                 if (Calculate(playerOne) > Calculate(playerTwo))
