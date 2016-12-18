@@ -71,10 +71,13 @@ namespace BlackJack
                 {
                     System.Console.WriteLine("Player one wins!");
                 }
-                else
+                else if (Calculate(playerOne) < Calculate(playerTwo))
                 {
                     System.Console.WriteLine("Player two wins!");
 
+                }
+                else {
+                    System.Console.WriteLine("It's a tie!");
                 }
             }
             System.Environment.Exit(1);
